@@ -1,0 +1,39 @@
+html, 
+body {
+    margin:     0px;
+    padding:    0px;
+    text-align: center;
+}
+
+.target {
+    background-image:       url('target.png');
+    background-position:    center center;
+    background-repeat:      no-repeat;
+    background-size:        300px 300px;
+    display:                inline-block;
+    font-size:              0px;
+    height:                 300px;
+    image-rendering:        auto;
+    left:                   calc(50% - 150px);
+    padding:                8px;
+    position:               absolute;
+    text-align:             left;
+    top:                    calc(50% - 150px);
+    width:                  300px;
+}
+
+.worried-smiley {
+    background-image:       url('worried-smiley.png');
+    background-position:    center center;
+    background-repeat:      no-repeat;
+    background-size:        48px 48px;
+    display:                block;
+    height:                 48px;
+    image-rendering:        auto;
+    margin:                 0px;
+    padding:                0px;
+    position:               relative;
+    width:                  48px;
+    left: calc(50% - 24px);
+    top: calc(50% - 24px);
+}

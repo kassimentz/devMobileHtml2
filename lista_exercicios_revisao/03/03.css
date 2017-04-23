@@ -1,0 +1,52 @@
+html, 
+body {
+    margin:     0px;
+    padding:    0px;
+    text-align: center;
+}
+
+.pacman-map {
+    background-image:       url('pacman-map.png');
+    background-position:    center center;
+    background-repeat:      no-repeat;
+    background-size:        449px, 497px;
+    display:                inline-block;
+    font-size:              0px;
+    height:                 497px;
+    image-rendering:        pixelated;
+    top:                    50vh;
+    position:               relative;
+    transform:              translate(0%, -50%);
+    text-align:             left;
+    width:                  449px;
+    -webkit-transform:      translate(0%, -50%);
+}
+
+.pacman-ghost {
+    background-position:    center center;
+    background-repeat:      no-repeat;
+    background-size:        32px, 32px;
+    display:                block;
+    height:                 32px;
+    image-rendering:        pixelated;
+    margin:                 0px;
+    padding:                0px;
+    width:                  32px;
+    float: right;   
+}
+
+.pacman-blinky {
+    background-image:   url('blinky.png');
+}
+
+.pacman-pinky {
+    background-image:   url('pinky.png');
+}
+
+.pacman-inky {
+    background-image:   url('inky.png');
+}
+
+.pacman-clyde {
+    background-image:   url('clyde.png');
+}

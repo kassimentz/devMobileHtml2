@@ -1,0 +1,27 @@
+.common {
+    border-color:   rgb(0, 0, 0);
+    border-style:   solid;
+    margin:         1.5em;
+    width:          200px;
+    box-sizing: border-box;
+}
+
+.specific-1 {
+    border-width:   1px;
+    padding:        0px;
+}
+
+.specific-2 {
+    border-width:   1px;
+    padding:        20px;
+}
+
+.specific-3 {
+    border-width:   20px;
+    padding:        0px;
+}
+
+.specific-4 {
+    border-width:   20px;
+    padding:        20px;
+}

@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    font-size: 16px;
+    margin:     0px;
+    padding:    0px;
+}
+
+header {
+    background-color:   rgb(203, 233, 47);
+    clear:              both;
+}
+
+h1 {
+    margin:                 0px;
+    text-align:             center;
+    -webkit-margin-after:   0px;
+    -webkit-margin-before:  0px;
+     -webkit-margin-end:    0px;
+    -webkit-margin-start:   0px;
+}
+
+img {
+    max-width:  100%;
+}
+
+.content {
+    clear:      both;
+    position:   relative;
+}
+
+nav {
+    background-color:   rgb(251, 255, 10);
+    bottom:             0px;
+    clear:              both;
+    display:            block;
+    float:              left;
+    height:             65px;
+    min-height:         100%;
+    overflow-x:         scroll;
+    width:              100%;
+}
+
+ul {
+    float:      left;
+    list-style: none;
+    margin:     0px;
+    padding:    0px;
+    width:      100%;
+}
+
+li {
+    clear:      none;
+    margin:     0px;
+    float:      left;
+    padding:    0.5em;
+}
+
+main {
+    clear:          both;
+    float:          none;
+    padding:        1.5em;
+}
+
+footer {
+    background-color:   rgb(246, 154, 5);
+    clear:              both;
+    padding:            1.5em;
+    text-align:         center;
+}
