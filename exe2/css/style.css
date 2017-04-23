@@ -1,0 +1,13 @@
+
+@font-face {
+    font-family: 'lato';
+    src: url('../webfontkit/lato-bold-webfont-webfont.woff2') format('woff2'),
+         url('../webfontkit/lato-bold-webfont-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+html {
+    font-family: 'lato';
+}

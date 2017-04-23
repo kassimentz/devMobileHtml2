@@ -1,0 +1,17 @@
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Slabo 27px', serif;
+font-family: 'League Script', cursive;*/
+
+@import url('https://fonts.googleapis.com/css?family=League+Script|Roboto|Slabo+27px');
+
+html {
+	font-family: 'Roboto', sans-serif;
+}
+
+nav {
+	font-family: 'Slabo 27px', serif;
+}
+
+footer {
+	font-family: 'League Script', cursive;
+}
