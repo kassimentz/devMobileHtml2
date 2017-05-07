@@ -1,0 +1,10 @@
+.templo-destruido {
+    height:     300px;
+    position:   relative;
+    width:      300px;
+}
+
+.templo-destruido img {
+    bottom:     0px;
+    position:   absolute;
+}

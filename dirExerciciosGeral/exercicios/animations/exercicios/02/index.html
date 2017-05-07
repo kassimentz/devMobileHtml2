@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+
+	<title>Exercício 02</title>
+    
+    <style type="text/css">
+    
+        .button {
+        	width:  100px;
+		 	height: 20px;
+   	 		transform-origin: left;
+   	 		-webkit-transform-origin: left;
+   	 		cursor: pointer;
+        }
+
+        #button-1 {
+        	transition:         width 600ms ease 0ms, 	height 600ms ease 600ms;
+    		-webkit-transition: width 600ms ease 0ms,	height 600ms ease 600ms;
+        }
+
+        #button-1:hover {
+        	width:  200px;
+    		height: 50px;
+
+    		 transition:        height 600ms ease 0ms, width 600ms ease 600ms;
+    		-webkit-transition: height 600ms ease 0ms,	width 600ms ease 600ms;
+        }
+
+        #button-2 {
+        	transition: background 2s, transform 2s;
+        	-webkit-transition: background 2s, transform 2s;
+        }
+
+        #button-2:hover {
+        	background: blue;
+    		transform: rotate(360deg);
+        }
+
+        #button-3 {
+        	transition:         width 600ms ease-in-out 0ms, height 600ms ease-in-out 0ms;
+    		-webkit-transition: width 600ms ease-in-out 0ms, height 600ms ease-in-out 0ms;
+        	
+        }
+
+        #button-3:hover {
+        	-webkit-transform:  translate(50%, 50%); 
+        	transform:  translate(50%, 50%);
+        }
+    	
+    	#button-4:hover {
+    		transform:          skew(20deg, 20deg);
+           -webkit-transform:  skew(20deg, 20deg);
+        	
+        }
+
+        #button-5 {
+        	transition: background 2s, transform 2s;
+        	-webkit-transition: background 2s, transform 2s;
+        	background: blue;		
+        }
+    	
+    	#button-5:hover {
+        	transform:          rotate(180deg) scale(1.2, 1.2);
+            -webkit-transform:  rotate(180deg) scale(1.2, 1.2);
+            background: pink;
+            width:  200px;
+    		height: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<button id="button-1" class="button-1 button">Botão 1</button>
+<button id="button-2" class="button-2 button">Botão 2</button>
+<button id="button-3" class="button-3 button">Botão 3</button>
+<button id="button-4" class="button-4 button">Botão 4</button>
+<button id="button-5" class="button-5 button">Botão 5</button>
+
+
+</body>
+
+</html>

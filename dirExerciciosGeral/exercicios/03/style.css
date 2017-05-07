@@ -1,0 +1,55 @@
+/*mobile: 320, tablet: 768, desktop: 1024*/
+html {
+	background-color: pink;
+}
+
+.mobile {
+	display: block;
+}
+
+.tablet,
+.desktop {
+	display: none;
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+	html {
+		background-color: blue;
+	}
+
+	.tablet {
+		display: block;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+}
+
+@media all and (min-width: 1025px) {
+	html {
+		background-color: green;
+	}
+
+	.desktop {
+		display: block;
+	}
+
+	.mobile, 
+	.tablet {
+		display: none;
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+	body{
+		background-color: purple;
+	}
+
+	.retina{
+		display: block;
+	}
+}

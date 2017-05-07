@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    <link rel="stylesheet" href="02.css">
+    
+    <style type="text/css">
+    
+        .button {
+
+            width:  100px;
+            height: 50px;
+            transform-origin: left;
+            -webkit-transform-origin: left;
+            cursor: pointer;
+
+            transition:         width 600ms ease 0ms,   height 600ms ease 600ms;
+            -webkit-transition: width 600ms ease 0ms,   height 600ms ease 600ms;
+        } 
+
+        .button-container:hover .button {
+
+            width:  200px;
+            height: 150px;
+
+             transition:        height 600ms ease 0ms, width 600ms ease 600ms;
+            -webkit-transition: height 600ms ease 0ms,  width 600ms ease 600ms;
+
+        }  
+    
+    </style>
+    
+<head>
+
+<body>
+
+    <h1>Simultaneamente</h1>
+
+    <div class="button-container">
+    
+        <button class="button">Transicione a todos nós</button>
+        
+        <button class="button">Transicione a todos nós</button>
+        
+        <button class="button">Transicione a todos nós</button>
+        
+        <button class="button">Transicione a todos nós</button>
+        
+        <button class="button">Transicione a todos nós</button>
+
+     </div>
+
+</body>
+
+</html>

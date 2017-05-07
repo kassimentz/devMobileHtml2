@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+
+	<title>Exercício 04</title>
+    
+    <style type="text/css">
+
+    	@keyframes rotacao-terra {
+
+    		0% {
+		    	transform: rotate(-360deg);
+		  	}
+		  	100% {
+		    	transform: rotate(0deg);
+		  	}
+		}
+
+		@-webkit-keyframes rotacao-terra {
+			
+			0% {
+		    	transform: rotate(-360deg);
+		  	}
+		  	100% {
+		    	transform: rotate(0deg);
+		  	}
+		}
+
+		@keyframes rotacao-lua {
+
+    		0% {
+		    	transform: rotate(-360deg);
+		  	}
+		  	100% {
+		    	transform: rotate(0deg);
+		  	}
+		}
+
+		@-webkit-keyframes rotacao-lua {
+			
+			0% {
+		    	transform: rotate(-360deg);
+		  	}
+		  	100% {
+		    	transform: rotate(0deg);
+		  	}
+		}
+    
+        body {
+        	width: 100vw;
+        	height: 100vh;
+        	
+        }
+
+        .via-lactea {
+        	width: 500px;
+        	height: 500px;
+        	margin: 50vh auto;
+        	background-color: black;
+        }
+
+        .terra {
+        	width: 100px;
+        	height: 100px;
+            background-color: blue;
+        	float: left;
+    		animation: rotacao-terra 3s linear infinite;
+    		
+        }
+
+
+        .lua {
+        	width: 50px;
+        	height: 50px;
+            background-color: white;
+            float: left;
+			transform:          translate(150px, 150px);
+            -webkit-transform:  translate(150px, 150px);
+    		animation: rotacao-lua 3s linear infinite;
+    		
+        }
+    
+    </style>
+
+</head>
+
+<body>
+	<div class="via-lactea">
+		<div class="terra"></div>
+		<div class="lua"></div>
+	</div>
+
+</body>
+
+</html>

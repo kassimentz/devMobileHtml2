@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    
+    <style type="text/css">
+
+    	html, body {
+    		margin: 0;
+    	}
+
+    
+        #image-01 {
+        	background-image: url(img/image-01.jpg);
+        }
+
+        #image-02 {
+        	background-image: url(img/image-02.jpg);
+        }
+
+        #image-03 {
+        	background-image: url(img/image-03.jpg);
+        }
+
+        #image-04 {
+        	background-image: url(img/image-04.jpg);
+        }
+
+        .image {
+    	    width: 100vw;
+    		float: left;
+    		height: calc(100vh / 4);
+    		background-repeat: no-repeat;
+        	background-size: cover;
+        	background-position: center center;
+
+        	
+            transition-property:            width, height;
+            -webkit-transition-property:    width, height;
+            transform-origin: top left;
+    
+          	transition-duration:            500ms;
+            -webkit-transition-duration:    500ms;
+
+        }
+
+		@media all and (min-width: 1025px) {
+
+			.image {
+	    	    width: calc(100vw / 2);
+	    		height: calc(100vh / 2);
+	    		
+        	}
+
+        	.image:hover {
+        		width: calc(100vw - 5%);
+        		height: calc(100vh - 5%);
+        		z-index: 1;
+        		position: absolute;
+        		
+        	}
+
+		}
+    
+    </style>
+    
+<head>
+
+<body>
+	<div id="image-01" class="image"></div>
+	<div id="image-02" class="image"></div>
+	<div id="image-03" class="image"></div>
+	<div id="image-04" class="image"></div>
+</body>
+
+</html>

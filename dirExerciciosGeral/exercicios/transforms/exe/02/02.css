@@ -1,0 +1,30 @@
+html, 
+body {
+    margin:     0px;
+    padding:    0px;
+    text-align: center;
+}
+
+.pacman-map {
+    background-image:       url('pacman-map.png');
+    background-position:    center center;
+    background-repeat:      no-repeat;
+    background-size:        449px, 497px;
+    display:                inline-block;
+    font-size:              0px;
+    height:                 497px;
+    image-rendering:        pixelated;
+    top:                    50vh;
+    position:               relative;
+    transform:              translate(0%, -50%);
+    text-align:             left;
+    width:                  449px;
+    -webkit-transform:      translate(0%, -50%);
+}
+
+.pacman-ghost {
+    display:                block;
+    image-rendering:        pixelated;
+    margin:                 0px;
+    padding:                0px;
+}

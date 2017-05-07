@@ -1,0 +1,27 @@
+@media all and (orientation: portrait) {
+	html {
+		background-color: pink;
+	}
+
+	.portrait {
+		display: block;
+	}
+
+	.landscape {
+		display: none;
+	}
+}
+
+@media all and (orientation: landscape) {
+	html {
+		background-color: blue;
+	}
+
+	.portrait {
+		display: none;
+	}
+
+	.landscape {
+		display: block;
+	}
+}
