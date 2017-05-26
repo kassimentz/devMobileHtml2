@@ -1,0 +1,25 @@
+/*mobile: 320, tablet: 768, desktop: 1024*/
+html {
+		background-color: #c3c3c3;
+}
+
+
+@media all and (max-width: 1024px) {
+
+	.col {
+		width: 100%;
+		float: none;
+	}
+	
+
+}
+
+@media all and (min-width: 1025px) {
+	
+
+	.col {
+		width: calc( 100% / 3 );
+		float: left;
+	}
+
+}

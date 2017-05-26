@@ -1,0 +1,118 @@
+.row {
+    box-sizing: border-box;
+    min-width:  100%;
+    width:      100%;
+    max-width:  100%;
+}
+
+/*  Vulgo: clearfix */
+.row:before, 
+.row:after {
+    content:    " ";
+    display:    table;
+}
+
+.row:after {
+    clear:  both;
+}
+  
+.col {
+    box-sizing: border-box;
+    position:   relative;
+    float:      left;
+    clear:      none;
+}
+
+.col:last-child {
+    float:      none;
+}
+
+.col + .col {
+    margin-left:    1.5em;
+}
+
+.colspan-1 {
+	margin-left: 11.1875em;
+}
+
+.colspan-2 {
+	margin-left: 23.875em;
+}
+
+.colspan-3 {
+	margin-left: 33.5625em;
+}
+
+.colspan-4 {
+	margin-left: 49.25em;
+}
+
+ 
+
+
+@media screen and (max-width: 1023px) {
+
+    /*  Colunas indo para 100% */
+    .col {
+        min-width:  100%;
+        width:      100%;
+        max-width:  100%;
+        clear:      both;
+    }
+    
+    /*  Eliminação das calhas(gutters)  */
+    .col + .col {
+        margin: 0px;
+    }
+
+    .colspan-1 {
+		margin-left: 0;
+	}
+
+	.colspan-2 {
+		margin-left: 0;
+	}
+
+	.colspan-3 {
+		margin-left: 0;
+	}
+
+	.colspan-4 {
+		margin-left: 0;
+	}
+
+}
+
+
+/*Definidos pelo desenvolvedor
+largura_calha   =   1.5em;
+numero_colunas  =   8;
+
+numero_calhas   =   (numero_colunas - 1);               //  7
+total_calhas    =   (numero_calhas * largura_calha);    //  10.5em
+
+total_colunas   =   (100% - total_calhas);              //  89,5%
+menor_coluna    =   (total_colunas / numero_colunas);   //  11.1875em
+
+Calculado acima
+menor_coluna    =   11.1875em
+
+Como cada interação span = 1, 2, 3, ... é calculada
+coluna^span =   ((menor_coluna * span) + ((span - 1) * largura_calha));
+
+Então se span = 2
+coluna^2    =   ((11.1875em * 2) + ((2 - 1) * 1.5em)) 
+coluna^2    =   ((22.375em) + (1.5em))
+coluna^2    =   23.875em;
+
+Então se span = 3
+coluna^3    =   ((11.1875em * 3) + ((3 - 1) * 1.5%)) 
+coluna^3    =   ((33.5625em) + (3%))
+coluna^3    =   33.5625em;
+
+Então se span = 4
+coluna^4    =   ((11.1875em * 4) + ((4 - 1) * 1.5%)) 
+coluna^4    =   ((44.75em) + (4.5%))
+coluna^4    =   49.25em;
+
+*/

@@ -1,0 +1,50 @@
+/*mobile: 320, tablet: 768, desktop: 1024*/
+html {
+		background-color: #c3c3c3;
+}
+
+
+
+/*Abaixo de 768px: uma coluna ocupando a tela inteira, essa deve ser a primeira das 3 do desktop*/
+@media all and (max-width: 768px) {
+
+	.col {
+		width: 100%;
+		float: none;
+	}
+	
+
+}
+
+/*Entre 1024px e 769px: duas colunas da mesma largura, essas devem ser as duas primeiras das 3 do desktop*/
+@media all and (min-width: 769px) and (max-width: 1024px) {
+	
+	.col:nth-child(1) {
+		width: calc( 100% / 2 );
+		float: left;
+	}
+
+	.col:nth-child(2) {
+		width: calc( 100% / 2 );
+		float: left;
+	}
+
+	.col:nth-child(3) {
+		width: 100%;
+		float: none;
+	}
+
+}
+
+
+
+/*Acima de 1024px: três colunas da mesma largura(lembre-se dos floats, displays)*/
+@media all and (min-width: 1025px) {
+	
+
+	.col {
+		width: calc( 100% / 3 );
+		float: left;
+	}
+
+}
