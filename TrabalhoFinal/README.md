@@ -13,7 +13,7 @@ Desenvolva um site responsivo sobre um tema de livre escolha, que obedeça a ch
 
 - Todos elementos de interação que não sejam texto puro devem apresentar feedback visual na forma de transições.
 
-- Pelo menos uma webfont deve ser utilizada.
+- Pelo menos uma webfont deve ser utilizada.(OK) 
 
 - O site deve conter um menu de navegação para suas diferentes páginas.
 
