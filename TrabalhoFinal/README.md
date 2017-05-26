@@ -1,6 +1,6 @@
 # ByMyPetLandingPage
 
-###Definição
+##Definição
 Desenvolva um site responsivo sobre um tema de livre escolha, que obedeça a checklist abaixo. Usem a criatividade e produzam um material complexo.
 
 - Todas as páginas devem ser responsivas, adequando-se para a exibição em dispositivos de qualquer resolução.
