@@ -8,39 +8,48 @@
 	<style type="text/css">
 		@import "css/style.css";
 	</style>
+	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
 </head>
 
 <body>
 	<div id="container">
 
 		<header>
-			<h1>BeMyPet - Encontre seu novo amigo!</h1>
+         
+    		<h1 class="logo"><a href="">BeMyPet</a></h1>
+    		<a class="to_nav" href="#nav">Menu</a>
+ 
 		</header>
 
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Funcionalidades</a></li>
-				<li><a href="#">Imagens</a></li>
-				<li><a href="#">Download</a></li>
-				<li><a href="#">Contato</a></li>
-			</ul>
+		<nav id="nav">
+         
+		    <ul>
+		        <li><a href="#features">Funcionalidades</a></li>
+		        <li><a href="#galeria">Imagens</a></li>
+		        <li><a href="#download">Download</a></li>
+		        <li><a href="#contato">Contato</a></li>
+		        <li><a href="#about">Home</a></li>
+		    </ul>
+		 
 		</nav>
 
 		<main>
 
 			<section class="about">
 				<article>
-					<p>
-						
-					</p>
+					<div class="sobre">
+						<p class="bemypet">
+							Nós ajudamos você a encontrar aquele amigo especial que você tanto procura!
+						</p>
+						<p class="info">
+							Disponivel para Android e iOS.
+						</p>
+						<a href="#download"><span id="link-to-download" class="button -blue center">Download</span></a>
+					</div>	
 				</article>
 
 				<figure>
-					<div>
-						<img src="imgs/iphone.png" alt="iphone" title="iphone">
-					</div>
-				
+					<img class="iphone-img" src="imgs/iphone.png" alt="iphone" title="iphone">
 				</figure>
 			</section>
 
@@ -67,6 +76,13 @@
 		</footer>
 
 	</div>
+
+	<script src="js/jquery.nav.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#nav').onePageNav();
+		});
+	</script>
 
 </body>
 </html>

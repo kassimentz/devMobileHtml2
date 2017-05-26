@@ -1,0 +1,372 @@
+/*reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+ 
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+ 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*fim reset*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font: 16px/1.4em 'Roboto', sans-serif;
+    color: #1c1c1c;
+}
+ 
+p,
+ul {
+    margin: 0 0 1.5em;
+}
+ 
+ul {
+    list-style: disc;
+    padding: 0 0 0 20px;
+}
+ 
+a {
+    color: #1D745A;
+}
+ 
+h1 {
+ 
+}
+ 
+h2 {
+    font-family: 'Roboto', serif;
+    font-size: 32px;
+    line-height: 1.4em;
+    margin: 0 0 .4em;
+    font-weight: bold;
+}
+
+ 
+/*header*/
+ 
+header {
+    background: #57C1F2;
+    padding: 15px 20px;
+}
+ 
+        header:before,
+        header:after {
+            content:"";
+            display:table;
+        }
+         
+        header:after {
+            clear:both;
+        }
+         
+        /* For IE 6/7 (trigger hasLayout) */
+        header {
+            zoom:1;
+        }
+ 
+h1.logo a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 22px;
+    float: left;
+    letter-spacing: 0.2em;
+}
+ 
+a.to_nav {
+    float: right;
+    color: #fff;
+    background: #4e4e4e;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+    height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+ 
+a.to_nav:hover,
+a.to_nav:focus {
+    color: #1c1c1c;
+    background: #ccc;
+}
+
+
+/*navigation*/ 
+ 
+#nav ul {
+    list-style: none;
+    background: #57C1F2;
+    padding: 5px 0;
+}
+ 
+#nav li a {
+    display: block;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    height: 2em;
+    border-bottom: 1px solid #383838;
+}
+ 
+#nav li:last-child a {
+    border-bottom: none;
+}
+ 
+#nav li a:hover,
+#nav li a:focus {
+    color: #1c1c1c;
+    background: #ffffff;
+}
+ 
+
+ #primary_nav li.top {
+    display: none;
+}
+
+
+/*footer*/
+ 
+footer {
+    font-family: 'Roboto', serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/*mobile*/
+@media screen and (max-width: 768px) {
+
+	.col {
+		width: 100%;
+		float: none;
+	}
+
+	a.to_nav {
+        display: none;
+    }
+
+	
+}
+
+
+
+/*tablet*/
+@media all and (min-width: 769px) and (max-width: 1024px) {
+	
+	.col {
+		width: calc( 100% / 2 );
+		float: left;
+	}
+
+	
+	a.to_nav {
+        display: none;
+    }
+     
+    .wrapper {
+        position: relative;
+        width: 768px;
+        margin: auto;
+    }
+     
+    #nav {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        background: none;
+    }
+     
+    #nav li {
+        display: inline;
+    }
+     
+    #nav li a {
+        float: left;
+        border: none;
+        padding: 0 10px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+    }
+
+}
+
+@media all and (min-width: 769px) {
+
+	
+	a.to_nav {
+        display: none;
+    }
+     
+    .wrapper {
+        position: relative;
+        width: 768px;
+        margin: auto;
+    }
+     
+    #nav {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        background: none;
+    }
+     
+    #nav li {
+        display: inline;
+    }
+     
+    #nav li a {
+        float: left;
+        border: none;
+        padding: 0 10px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+    }
+
+}
+
+/*acima de 1024*/
+@media all and (min-width: 1025px) {
+	
+
+	.col {
+		width: calc( 100% / 3 );
+		float: left;
+	}
+
+
+
+}
+
+
+#link-to-download {
+	width: 60%;
+    margin: auto;
+}
+
+.iphone-img {
+    transform:          scale(0.5, 0.5);
+    -webkit-transform:  scale(0.5, 0.5);
+}
+
+/**button css*/
+
+ .button {
+	display: flex;
+	overflow: hidden;
+
+	margin: 10px;
+	padding: 12px 12px;
+
+	cursor: pointer;
+	user-select: none;
+	transition: all 60ms ease-in-out;
+	text-align: center;
+	white-space: nowrap;
+	text-decoration: none !important;
+	text-transform: none;
+	text-transform: capitalize;
+
+	color: #fff;
+	border: 0 none;
+	border-radius: 4px;
+
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.3;
+
+	-webkit-appearance: none;
+	-moz-appearance:    none;
+	appearance:         none;
+
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 160px;
+
+	&:hover {
+	transition: all 60ms ease;
+
+	opacity: .85;
+	}
+
+	&:active {
+	transition: all 60ms ease;
+	opacity: .75;
+	}
+
+	&:focus {
+	outline: 1px dotted #959595;
+	outline-offset: -4px;
+	}
+}
+
+.button.-blue {
+  color: #FFFFFF;
+  background: #2b90d9;
+}
