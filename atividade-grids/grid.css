@@ -23,28 +23,38 @@
     clear:      none;
 }
 
-.col:last-child {
-    float:      none;
-}
-
-.col + .col {
-    margin-left:    1.5em;
-}
 
 .colspan-1 {
-	margin-left: 11.1875em;
+    width: 11.1875%;
+    /* ((menor_coluna * span) + ((span - 1) * largura_calha)); */
 }
 
 .colspan-2 {
-	margin-left: 23.875em;
+    width: calc(calc(11.1875% * 2) + 1.5%);
 }
 
 .colspan-3 {
-	margin-left: 33.5625em;
+    width: calc(calc(11.1875% * 3) + calc(2 * 1.5%));
 }
 
 .colspan-4 {
-	margin-left: 49.25em;
+    width: calc(calc(11.1875% * 4) + calc(3 * 1.5%));
+}
+
+.colspan-5 {
+    width: calc(calc(11.1875% * 5) + calc(4 * 1.5%));
+}
+
+.colspan-6 {
+    width: calc(calc(11.1875% * 6) + calc(5 * 1.5%));
+}
+
+.colspan-7 {
+    width: calc(calc(11.1875% * 7) + calc(6 * 1.5%));
+}
+
+.colspan-8 {
+    width: 100%;
 }
 
  
