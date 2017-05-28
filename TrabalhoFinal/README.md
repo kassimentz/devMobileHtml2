@@ -11,7 +11,7 @@ Desenvolva um site responsivo sobre um tema de livre escolha, que obedeça a che
 
 - A página inicial do site deve conter uma área de boas-vindas (container) com imagem(ns) e opcionalmente texto / vídeos, que ocupe a tela inteira em qualquer resolução (podendo ocupar mais de 1 tela no mobile), sobrando ou não espaço para o menu / cabeçalho / título a gosto do desenvolvedor. (OK -- Menu)
 
-- Todos elementos de interação que não sejam texto puro devem apresentar feedback visual na forma de transições.
+- Todos elementos de interação que não sejam texto puro devem apresentar feedback visual na forma de transições. (OK)
 
 - Pelo menos uma webfont deve ser utilizada. (OK) 
 
@@ -19,6 +19,6 @@ Desenvolva um site responsivo sobre um tema de livre escolha, que obedeça a che
 
 - O menu deve possuir diferentes estados conforme a interação do usuário (:hover, :active) e essas interações devem ser feitas com animações ou transições (OK)
 
-- Pelo menos um elemento do site deverá ser animado quando o mouse for colocado sobre ele ou o tempo todo 
+- Pelo menos um elemento do site deverá ser animado quando o mouse for colocado sobre ele ou o tempo todo (OK - icones twitter e facebook)
 
-- Pelo menos uma página deve conter conteúdo recuperado dinamicamente de uma planilha do Google.
+- Pelo menos uma página deve conter conteúdo recuperado dinamicamente de uma planilha do Google. (Não Obrigatório)
