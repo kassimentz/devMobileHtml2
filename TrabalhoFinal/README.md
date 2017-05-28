@@ -3,7 +3,7 @@
 ## Definição
 Desenvolva um site responsivo sobre um tema de livre escolha, que obedeça a checklist abaixo. Usem a criatividade e produzam um material complexo.
 
-- Todas as páginas devem ser responsivas, adequando-se para a exibição em dispositivos de qualquer resolução.
+- Todas as páginas devem ser responsivas, adequando-se para a exibição em dispositivos de qualquer resolução. (OK)
 
 - O site deve ser semanticamente construído, com o uso das tags semânticas adequadas. (OK)
 
@@ -17,7 +17,7 @@ Desenvolva um site responsivo sobre um tema de livre escolha, que obedeça a che
 
 - O site deve conter um menu de navegação para suas diferentes páginas. (OK)
 
-- O menu deve possuir diferentes estados conforme a interação do usuário (:hover, :active) e essas interações devem ser feitas com animações ou transições
+- O menu deve possuir diferentes estados conforme a interação do usuário (:hover, :active) e essas interações devem ser feitas com animações ou transições (OK)
 
 - Pelo menos um elemento do site deverá ser animado quando o mouse for colocado sobre ele ou o tempo todo (OK - galeria)
 
