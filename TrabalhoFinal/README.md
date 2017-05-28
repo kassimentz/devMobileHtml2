@@ -19,6 +19,6 @@ Desenvolva um site responsivo sobre um tema de livre escolha, que obedeça a che
 
 - O menu deve possuir diferentes estados conforme a interação do usuário (:hover, :active) e essas interações devem ser feitas com animações ou transições (OK)
 
-- Pelo menos um elemento do site deverá ser animado quando o mouse for colocado sobre ele ou o tempo todo (OK - galeria)
+- Pelo menos um elemento do site deverá ser animado quando o mouse for colocado sobre ele ou o tempo todo 
 
 - Pelo menos uma página deve conter conteúdo recuperado dinamicamente de uma planilha do Google.
