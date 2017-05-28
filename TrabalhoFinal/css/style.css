@@ -512,8 +512,45 @@ footer p {
 	color: #FFFFFF;
 }
 
+
+@-webkit-keyframes scale-up-center {
+	0% {
+		-webkit-transform:scale(.5);
+		transform:scale(.5)
+	}
+	100% {
+		-webkit-transform:scale(1);
+		transform:scale(1)
+	}
+}
+@keyframes scale-up-center {
+	0% {
+		-webkit-transform:scale(.5);
+		transform:scale(.5)
+	}
+	100% {
+		-webkit-transform:scale(1);
+		transform:scale(1)
+	}
+}
+
 #twitter {
 	color: #FFFFFF;
+
+}
+
+.fa-twitter:hover {
+
+	animation:          scale-up-center 2s ease 0s both;
+    -webkit-animation:  scale-up-center 2s ease 0s both;
+    -moz-animation:		scale-up-center 2s ease 0s both;
+	
+}
+
+.fa-facebook-official:hover {
+	animation:          scale-up-center 2s ease 0s both;
+    -webkit-animation:  scale-up-center 2s ease 0s both;
+    -moz-animation:		scale-up-center 2s ease 0s both;
 }
 
 
