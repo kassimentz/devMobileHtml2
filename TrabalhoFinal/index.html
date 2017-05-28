@@ -5,10 +5,11 @@
 	<title>BeMyPet</title>
 	<meta charset="UTF-8">
 
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<style type="text/css">
 		@import "css/style.css";
 	</style>
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
 	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
 </head>
 
@@ -18,18 +19,18 @@
 		<header>
          
     		<h1 class="logo"><a href="">BeMyPet</a></h1>
-    		<a class="to_nav" href="#nav">Menu</a>
  
 		</header>
 
 		<nav id="nav">
          
 		    <ul>
+		        <li><a href="#about">Home</a></li>
 		        <li><a href="#features">Funcionalidades</a></li>
 		        <li><a href="#galeria">Imagens</a></li>
 		        <li><a href="#download">Download</a></li>
 		        <li><a href="#contato">Contato</a></li>
-		        <li><a href="#about">Home</a></li>
+		        
 		    </ul>
 		 
 		</nav>
@@ -39,40 +40,69 @@
 			<section class="about" id="about">
 				<article>
 					<div class="w3-row sobre">
-						<p class="bemypet">
-							Nós ajudamos você a encontrar aquele amigo especial que você tanto procura!
-						</p>
-						<p class="info">
+						<p class="w3-col s12 m6 l6 bemypet">
+							Nós ajudamos você a encontrar aquele amigo especial que você tanto procura!</br>
 							Disponivel para Android e iOS.
 						</p>
-						<a href="#download"><span id="link-to-download" class="button -blue center">Download</span></a>
+						<p class="w3-col s12 m6 l6 info">
+							<a href="#download"><span id="link-to-download" class="button -blue center">Download</span></a>	
+						</p>
 					</div>	
 				</article>
-
-				<figure>
-					<img class="iphone-img" src="imgs/iphone.png" alt="iphone" title="iphone">
-				</figure>
 			</section>
 
 			<section class="features" id="features">
 
-				<h2>Funcionalidades</h2>
-
 				<div class="w3-row">
-				  <div class="w3-col m4 l3">
-				    <p>12 columns on a small screen, 4 on a medium screen, and 3 on a large screen.</p>
-				  </div>
-				  <div class="w3-col m8 l9">
-				    <p>12 columns on a small screen, 8 on a medium screen, and 9 on a large screen.</p>
-				  </div>
-				</div>
+					<h2>Funcionalidades</h2>
 
+					<div class="w3-col s12 m12 l12 ">
+						<div class="list-features">
+						<ol>
+							<li><a href="#">Busca de Cães, Gatos e outras espécies</a></li>
+							<li><a href="#">Cadastre um Pet para adoção</a></li>
+							<li><a href="#">Notificações de interesse ao seu pet</a></li>
+							<li><a href="#">Notificações das etapas da adoção</a></li>
+							<li><a href="#">Melhor rota para buscar seu Pet</a></li>
+							<li><a href="#">Serviços para seu Pet</a></li>
+						</ol>
+						</div>
+					</div>
+				</div>
 				
 			</section>
 
-			<section class="gallery" id="galeria">
+			<section id="galeria">
 
-				<h2>Galeria de Imagens</h2>
+				<div class="w3-row">
+
+					<h2>Galeria de Imagens</h2>
+
+					<!-- <div class="w3-col s12 m12 l12 "> -->
+						<div class="galeria cf">
+						
+							<div class="w3-col s12 m6 l4">
+								<img src="imgs/pet1.jpg" />
+							</div>
+							<div class="w3-col s12 m6 l4">
+								<img src="imgs/pet2.jpg" />
+							</div>
+	
+							<div class="w3-col s12 m6 l4">
+								<img src="imgs/pet3.jpg" />
+							</div>
+							<div class="w3-col s12 m6 l4">
+								<img src="imgs/pet4.jpg" />
+							</div>
+							<div class="w3-col s12 m6 l4">
+								<img src="imgs/pet5.jpg" />
+							</div>
+							<div class="w3-col s12 m6 l4">
+								<img src="imgs/pet6.jpg" />
+							</div>
+						</div>
+					<!-- </div> -->
+				</div>
 				
 			</section>
 
