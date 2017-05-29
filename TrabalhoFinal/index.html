@@ -12,7 +12,59 @@
 	<!-- font awesome -->
 	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 	<!-- fim font awesome -->
-	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script>
+		
+		$(document).on('ready', function () {
+		
+			// Objeto da requisição
+			var loader,
+			ID	=	'1f_dkp4aw15Fn2HOJh82Ubb-RzgQIricXaVq_sVPBzhM',	
+			DATA_URL	=	'https://spreadsheets.google.com/feeds/list/' + ID  + '/od6/public/values?alt=json';
+			
+			
+			
+			// Callback de sucesso
+			var success	=	function (data) {
+
+				var divGaleria	=	$('<div class="galeria cf">');
+				
+				
+				// Navego os dados usando $.each
+				$.each(data.feed.entry, function (i, item) {
+
+				
+					var	divContentImage	= $('<div class="'+item['gsx$classe']['$t']+'"><img src="'+item['gsx$image']['$t']+'"/></div>');
+					
+					divGaleria.append(divContentImage);
+
+				
+				});
+
+				divGaleria.append('</div>');
+			
+				$("#galeria-section").append(divGaleria);
+			
+			};
+			
+			// Callback de falha
+			var fail	=	function () {
+			
+				console.debug('--- FAIL ---');
+				console.debug(arguments);
+			
+			};
+			
+			
+			
+			// Criamos uma requisição ajax para DATA_URL
+			loader	=	$.ajax(DATA_URL)
+						.done(success)	// Registramos o callback de sucesso
+						.fail(fail);	// Registramos o callback de falha
+		
+		});
+	
+	</script>
 </head>
 
 <body>
@@ -76,34 +128,10 @@
 
 			<section id="galeria">
 
-				<div class="w3-row">
+				<div id="galeria-section" class="w3-row">
 
 					<h2>Galeria de Imagens</h2>
 
-					<!-- <div class="w3-col s12 m12 l12 "> -->
-						<div class="galeria cf">
-						
-							<div class="w3-col s12 m6 l4">
-								<img src="imgs/pet1.jpg" />
-							</div>
-							<div class="w3-col s12 m6 l4">
-								<img src="imgs/pet2.jpg" />
-							</div>
-	
-							<div class="w3-col s12 m6 l4">
-								<img src="imgs/pet3.jpg" />
-							</div>
-							<div class="w3-col s12 m6 l4">
-								<img src="imgs/pet4.jpg" />
-							</div>
-							<div class="w3-col s12 m6 l4">
-								<img src="imgs/pet5.jpg" />
-							</div>
-							<div class="w3-col s12 m6 l4">
-								<img src="imgs/pet6.jpg" />
-							</div>
-						</div>
-					<!-- </div> -->
 				</div>
 				
 			</section>
