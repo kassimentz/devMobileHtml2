@@ -21,4 +21,4 @@ Desenvolva um site responsivo sobre um tema de livre escolha, que obedeça a che
 
 - Pelo menos um elemento do site deverá ser animado quando o mouse for colocado sobre ele ou o tempo todo (OK - icones twitter e facebook)
 
-- Pelo menos uma página deve conter conteúdo recuperado dinamicamente de uma planilha do Google. (Não Obrigatório)
+- Pelo menos uma página deve conter conteúdo recuperado dinamicamente de uma planilha do Google. (OK)
