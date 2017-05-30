@@ -254,55 +254,47 @@ main .download figure {
 	margin: 0;
 }
 
+main .download .buttons-down {
+	width: 200px;
+	height: 200px;
+}
+
 
 main #img-download {
 	width: 200px;
 }
 
 main #btnAppStore {
-	background-image: url(../imgs/appstore.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 300px;
-	height: 100px;
+	width: 200px;
+	padding: 12px;
 	display: block;
-	transform:          scale(0.5, 0.5);
-    -webkit-transform:  scale(0.5, 0.5);
     transform-origin: left;
 	-webkit-transform-origin: left;
 	cursor:             pointer;
-	transition:         width 600ms ease 0ms, 	height 600ms ease 600ms;
-	-webkit-transition: width 600ms ease 0ms,	height 600ms ease 600ms;
+	transition:         width 600ms linear 0ms, height 600ms linear 0ms;
+	-webkit-transition: width 600ms linear 0ms,	height 600ms linear 0ms;
 }
 
 main #btnAppStore:hover {
 	width: 350px;
-	height: 150px;
-	transition:        height 600ms ease 0ms, width 600ms ease 600ms;
-	-webkit-transition: height 600ms ease 0ms,	width 600ms ease 600ms;
+	transition:        height 600ms linear 0ms, width 600ms linear 0ms;
+	-webkit-transition: height 600ms linear 0ms, width 600ms linear 0ms;
 }
 
 main #btnPlayStore {
-	background-image: url(../imgs/googleplay.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	width: 300px;
-	height: 100px;
+	width: 200px;
 	display: block;
-	transform:          scale(0.58, 0.58);
-    -webkit-transform:  scale(0.58, 0.58);
     transform-origin: left;
 	-webkit-transform-origin: left;
 	cursor:             pointer;
-	transition:         width 600ms ease 0ms, 	height 600ms ease 0ms;
-	-webkit-transition: width 600ms ease 0ms,	height 600ms ease 0ms;
+	transition:         width 600ms linear 0ms, height 600ms linear 0ms;
+	-webkit-transition: width 600ms linear 0ms,	height 600ms linear 0ms;
 }
 
 main #btnPlayStore:hover {
-	width: 450px;
-	height: 150px;
-	transition:        height 600ms ease 0ms, width 600ms ease 600ms;
-	-webkit-transition: height 600ms ease 0ms,	width 600ms ease 600ms;
+	width: 350px;
+	transition:        height 600ms linear 0ms, width 600ms linear 0ms;
+	-webkit-transition: height 600ms linear 0ms,width 600ms linear 0ms;
 }
 
 main .contato {
