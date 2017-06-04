@@ -166,7 +166,7 @@ main .features ul {
 
 
 main .list-features{
-	width:500px;
+    max-width: 500px;
 	margin:0 auto;
 }
 
@@ -560,7 +560,9 @@ footer p {
 /*mobile*/
 @media screen and (max-width: 768px) {
 
-
+	h2 {
+		font-size: 25px;
+	}
 }
 
 
